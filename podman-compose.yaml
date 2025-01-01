@@ -19,6 +19,7 @@ services:
     volumes:
       - ./ollama/ollama-webui:/app/backend/data
     network_mode: "host"
+    pull_policy: always
     depends_on:
       - ollama
     environment: # https://docs.openwebui.com/getting-started/env-configuration#default_models
